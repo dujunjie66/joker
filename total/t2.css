@@ -1,0 +1,33 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+}
+
+.bg01 {
+    background-color: #ff0000;
+}
+
+.bg02 {
+    background-color: #acac00;
+}
+
+.bg03 {
+    background-color: #00acac;
+}
+
+.bg04 {
+    background-color: #ac00ac;
+}
+
+.mybox {
+    /* 盒模型外边距 上，右，下，左 */
+   margin-top: 1rem;
+   margin-right: 2rem;
+   margin-bottom: 3rem;
+   margin-left: 4rem;
+   /* 盒模型的内边距 上，右，下，左 */
+   padding: 1rem 2rem 3rem 4rem;
+   /* 盒模型边框 */
+   border: 3px solid #000000;
+}
