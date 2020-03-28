@@ -1,0 +1,64 @@
+
+/* 这个是注册按钮的样式 设置了背景颜色 字体颜色边框弧度 和内外边距 */
+.zhuche{
+    background-color: rgb(248, 112, 50);
+    color: cornsilk;
+    border-radius: 8px;
+    padding:6px;
+    margin: 0px 600px;
+    }
+    /* 这个是注册按钮点击时 背景变成另外一个颜色 */
+    .zhuche:hover{
+      background-color: rgb(253, 65, 8);
+    }
+    
+    /* 设置的输入框样式 */
+    .my-input{
+    border: 1.5px solid #bcbcbc;
+    border-radius: 4px;
+    padding: 0.2rem;
+    margin: 0px 600px;
+    }
+    
+    .my-input input{
+      /* transparent是透明 */
+    border-color: transparent;
+    /* 去掉input 的外框 */
+    outline: none;
+    }
+    /* my-input 里面所有元素获取焦点时 */
+    .my-input:focus-within{
+      border-color: rgb(46, 196, 255);
+    }
+    
+    
+    /* .a.b  多个类选择器中间没有空格表示同时套用了两个类的元素 */
+    /* .wrong.my-input表示.class=".my-input error...." */
+    .wrong.my-input{
+      border-color: #ff0000;
+    }
+    /*.class=".my-input wrong....":focus-within自己加：class为这个而且有这个焦点  */
+    /* class 为form的input 的那个元素要有焦点，而且在1其里面还要有error这个class */
+    .my-input:focus-within.wrong{
+      border-color: #ff0000;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

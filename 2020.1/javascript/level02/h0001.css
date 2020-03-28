@@ -1,0 +1,46 @@
+/* body的样式 */
+body {
+    /* 去掉留白 */
+    margin: 0px;
+    padding: 0px;
+    /* 背景图片 */
+    background-image: url('../images/img10.jpg');
+    background-size: cover;
+  }
+  
+  /* 导航样式 */
+  nav {
+    /* 固定到下方 */
+    position: fixed;
+    bottom: 3rem;
+    width: 100%;
+    /* 内容居中 */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navs span {
+    /* 导航文字的样式 */
+    display: inline-block;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navs span:hover {
+    /* 导航的鼠标悬停效果 */
+    cursor: pointer;
+    color: #ff0000;
+  }
+  
+  .navs {
+    position: relative;
+  }
+  
+  .bar {
+    /* 通过宽度和背景色制造下划线效果 */
+    background-color: #ff0000;
+    height: 0.2rem;
+    width: 33.33333%;
+    /* 位置 */
+    position: absolute;
+    left:66.66666%;
+  }

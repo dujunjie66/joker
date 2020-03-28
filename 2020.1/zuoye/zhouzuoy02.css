@@ -1,0 +1,121 @@
+body {
+    /* 去白留黑 */
+    margin: 0px;
+    padding: 0px;
+    /* 去滚动条，让页面成全屏模式，没法拖动显示超出部分内容 */
+    overflow: hidden;
+  }
+  
+  nav {
+    /* 固定在下方 */
+    position: fixed;
+    bottom: 3rem;
+    width: 100%;
+    /* 固定居中 */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navs span {
+    /* 导航文字的样式 */
+    display: inline-block;
+    padding: 0.5rem 2rem;
+  }
+  
+  .navs span:hover {
+    /* 导航的鼠标悬停效果 */
+    cursor: pointer;
+    color: #ff0000;
+  }
+  
+  .navs {
+    position: relative;
+  }
+  
+  .bar {
+    background-color: #ff0000;
+    height: 0.2rem;
+    width: 20%;
+    position: absolute;
+    left: 0%;
+    transition: left 0.5s;
+  }
+  
+  .pages {
+    position: relative;
+    height: 100vh;
+  }
+  
+  #page01 {
+    background-image: url('01.jpg');
+    background-size: cover;
+    /* 位置和高宽 */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+  }
+  
+  #page02 {
+    background-image: url('02.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+  }
+  
+  #page03 {
+    background-image: url('03.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+  }
+  
+  #page04 {
+    background-image: url('04.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+  }
+  
+  #page05 {
+    background-image: url('05.jpg');
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 100%;
+  }
+  
+  @keyframes move-out {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -100%;
+    }
+  }
+  
+  .move-out {
+    animation: move-out 1s;
+    left: -100% !important;
+  }
+  
+  @keyframes move-in {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  
+  .move-in {
+    animation: move-in 1s;
+    left: 0% !important;
+  }

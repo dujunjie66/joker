@@ -1,0 +1,75 @@
+.tc {
+  text-align: center;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  body>div {
+    position: absolute;
+    bottom: 6rem;
+    color: #ff0000;
+    font-size: 2rem;
+  }
+
+  .btn {
+    margin: 8px;
+    padding: 5px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #f50057;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+
+  .zhuche{
+    background-color: rgb(255, 0, 0);
+    color: cornsilk;
+    border-radius: 8px;
+    padding:6px;
+    margin: 0px 600px;
+    }
+    /* 这个是注册按钮点击时 背景变成另外一个颜色 */
+    .zhuche:hover{
+      background-color: rgb(218, 22, 71);
+    }
+
+  .my-input{
+    border: 1.5px solid #bcbcbc;
+    border-radius: 4px;
+    padding: 0.2rem;
+    margin: 0px 600px;
+    }
+    
+    .my-input input{
+      /* transparent是透明 */
+    border-color: transparent;
+    /* 去掉input 的外框 */
+    outline: none;
+    }
+    /* my-input 里面所有元素获取焦点时 */
+    .my-input:focus-within{
+      border-color: rgb(46, 196, 255);
+    }
+    
+    
+    /* .a.b  多个类选择器中间没有空格表示同时套用了两个类的元素 */
+    /* .wrong.my-input表示.class=".my-input error...." */
+    .wrong.my-input{
+      border-color: #ff0000;
+    }
+    /*.class=".my-input wrong....":focus-within自己加：class为这个而且有这个焦点  */
+    /* class 为form的input 的那个元素要有焦点，而且在1其里面还要有error这个class */
+    .my-input:focus-within.wrong{
+      border-color: #ff0000;
+    }
+    
